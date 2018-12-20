@@ -1,6 +1,4 @@
-package com.likole.c0compiler.Interface;
-
-import com.likole.c0compiler.Fct;
+package com.likole.c0compiler.interpreter;
 
 /**
  * @author kanghao
@@ -8,17 +6,15 @@ import com.likole.c0compiler.Fct;
  */
 public interface Interpreter {
 
-    /**
-     * 输出代码清单
-     * @param start 开始输出的位置
-     */
-    void listCode(int start);
 
+    final int stacksize=500;
+
+    void init();
 
     /**
      * 解释程序
      */
-    void interpret();
+    int interpret();
 
     /**
      * 通过给定的层次差来获得该层的堆栈帧基地址

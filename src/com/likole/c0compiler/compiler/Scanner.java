@@ -1,4 +1,6 @@
-package com.likole.c0compiler.Interface;
+package com.likole.c0compiler.compiler;
+
+import java.io.BufferedReader;
 
 /**
  * @author kanghao
